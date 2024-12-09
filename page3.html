@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Monsters</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bungee&display=swap">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Bungee', sans-serif;
+      background-color: #111;
+      color: #fff;
+      margin-top: 50px;
+    }
+
+    nav {
+      background-color: rgba(0, 0, 0, 0.9);
+      overflow: hidden;
+      padding: 10px;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+      transition: background-color 0.3s;
+    }
+
+    .logo {
+      float: left;
+      margin-right: 20px;
+    }
+
+    nav a {
+      float: left;
+      display: block;
+      color: #fff;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      transition: color 0.3s, transform 0.3s;
+    }
+
+    nav a:hover {
+      color: red;
+      transform: translateY(-3px);
+    }
+
+    .content {
+      position: absolute;
+      top: 50%;
+      left: 10%;
+      transform: translate(-10%, -50%);
+      text-align: left;
+      width: 60%;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      color: red;
+      margin-bottom: 20px;
+      text-shadow: 0 0 20px red;
+    }
+
+    p {
+      font-size: 1.2em;
+      color: #fff;
+      margin-bottom: 30px;
+      text-align: justify;
+    }
+
+    section.about {
+      background-color: #000;
+      color: #fff;
+      padding: 50px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .about-info {
+      width: 45%;
+    }
+
+    .about-info h2 {
+      color: red;
+      margin-bottom: 20px;
+    }
+
+    .poster {
+      width: 45%;
+    }
+
+    .red-line {
+      border: 2px solid darkred;
+      width: 100%;
+      margin: 20px 0;
+    }
+
+    audio {
+      display: none;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+
+<body>
+
+  <audio controls autoplay loop>
+    <source src="audio/Stranger Things (Extended)_256k.mp3" type="audio/mp3">
+    Your browser does not support the audio tag.
+  </audio>
+
+  <nav>
+    <div class="logo">
+      <img src="images/logo.png" alt="Logo" height="40">
+    </div>
+    <a href="index.html">Home</a>
+    <a href="page2.html">Characters</a>
+    <a href="page3.html">Monsters</a>
+  </nav>
+
+  <section id="about" class="about">
+    <div class="about-info">
+      <h2>Anti-virus</h2>
+      <div class="red-line"></div>
+      <h2>About</h2>
+      <p>Antivirus is software designed to detect, prevent, and remove malicious software like viruses, 
+        malware, and spyware from devices. It scans files, monitors system activity, and blocks harmful 
+        threats to protect personal data and ensure smooth device performance. Regular updates help antivirus 
+        programs stay effective against evolving cyber threats..</p>
+    </div>
+    <div class="poster">
+      <img src="https://th.bing.com/th/id/OIP._Lavik4c60V92ZQD5V0v_wHaEK?w=281&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7">
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <div class="about-info">
+      <h2>HTML page </h2>
+      <div class="red-line"></div>
+      <h2>About</h2>
+      <p>HTML stands forHyperText Markup Language.Itis used to designweb pages
+        usinga markup language.Itis a combination ofHypertext and Markup language.HTML
+        uses predefined tags and elements thattell the browser howto properly display the
+        content on the screen.</p>
+    </div>
+    <div class="poster">
+      <img src="https://th.bing.com/th/id/OIP.MN7CJgaeKj7xDpfk3uT0WAHaF7?rs=1&pid=ImgDetMain">
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <div class="about-info">
+      <h2>Attributes</h2>
+      <div class="red-line"></div>
+      <h2>About</h2>
+      <p>Attributes in HTML provide additional information about an element and help
+         define its properties or behavior. They are specified within the opening tag 
+         of an element, usually in the format name="value". For example, the href 
+         attribute in an  a  tag defines the link destination, and the src attribute 
+          in an img  tag specifies the image source. Attributes enhance the functionality 
+          and customization of HTML elements.
+    </div>
+    <div class="poster">
+      <img src="https://i.stack.imgur.com/faB8G.png"> 
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <div class="about-info">
+      <h2>Head Section</h2>
+      <div class="red-line"></div>
+      <h2>About</h2>
+      <p> Head section
+      The head ntains meta-information aboutthe document, such as the title
+      tittle, links to stylesheets,
+      and scripts.</p>
+    </div>
+    <div class="poster">
+      <img src="https://th.bing.com/th/id/OIP.mnqS5tXjJ3R_t0CfRXcrMQAAAA?w=304&h=391&rs=1&pid=ImgDetMain">
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <div class="about-info">
+      <h2>Body Section </h2>
+      <div class="red-line"></div>
+      <h2>About</h2>
+      <p>Body section The <body>tagcontains the visible content ofthe page,
+        such as text, images, videos, and othermedia</p>
+    </div>
+    <div class="poster">
+      <img src="https://th.bing.com/th/id/OIP._74B8Ehyjwm0zuD61B2ITgHaHa?rs=1&pid=ImgDetMain">
+    </div>
+  </section>
+
+  <script>
+    window.addEventListener('scroll', function () {
+      var navbar = document.querySelector('nav');
+      var scrollPosition = window.scrollY;
+      if (scrollPosition > 100) {
+        navbar.style.backgroundColor = "rgb(0, 0, 0, 0.9)";
+      } else {
+        navbar.style.backgroundColor = "rgb(0, 0, 0, 0.9)";
+      }
+    });
+  </script>
+</body>
+
+</html>
