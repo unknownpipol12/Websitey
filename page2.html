@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Characters</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bungee&display=swap">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Bungee', sans-serif;
+      background: linear-gradient(to right, #000, #000, #8B0000);
+      color: #fff;
+      margin-top: 50px;
+    }
+
+    nav {
+      background-color: rgba(0, 0, 0, 0.9);
+      overflow: hidden;
+      padding: 10px;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+      transition: background-color 0.3s;
+    }
+
+    .logo {
+      float: left;
+      margin-right: 20px;
+    }
+
+    nav a {
+      float: left;
+      display: block;
+      color: #fff;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      transition: color 0.3s, transform 0.3s;
+    }
+
+    nav a:hover {
+      color: red;
+      transform: translateY(-3px);
+    }
+
+    .hero-section {
+      position: relative;
+      height: auto;
+      overflow: hidden;
+      margin-top: 0px;
+      background: linear-gradient(to right, #000, #000, #8B0000);
+      display: flex;
+    }
+
+    .hero-content {
+      flex: 1;
+      padding: 5% 5%;
+      text-align: left;
+    }
+
+    .hero-content h1,
+    .hero-content p,
+    .character-list,
+    .youtube-video {
+      width: 100%;
+      /* Make sure the content spans the full width of the hero section */
+    }
+
+    .hero-content h1 {
+      font-size: 2em;
+      /* Adjusted font size */
+      color: red;
+      margin-bottom: 15px;
+      /* Adjusted margin */
+    }
+
+    .hero-content p {
+      font-size: 1em;
+      /* Adjusted font size */
+      color: #fff;
+      margin-bottom: 20px;
+      /* Adjusted margin */
+      text-align: justify;
+    }
+
+    .hero-image {
+      flex: 1;
+      text-align: right;
+    }
+
+    .hero-image img {
+      max-width: 100%;
+    }
+
+    .orange-line {
+      border: 2px solid orange;
+      width: 100%;
+      margin: 15px 0;
+      /* Adjusted margin */
+    }
+
+    .character-list {
+      font-size: 1em;
+      /* Adjusted font size */
+      color: #fff;
+      margin-bottom: 15px;
+    }
+
+    .character-list ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .character-list li {
+      margin-bottom: 10px;
+    }
+
+    .youtube-video {
+      margin-top: 15px;
+    }
+
+    audio {
+      display: none;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+
+<body>
+  <audio controls autoplay loop>
+    <source src="audio/Kids_256k.mp3" type="audio/mp3">
+    Your browser does not support the audio tag.
+  </audio>
+
+  <nav>
+    <div class="logo">
+      <img src="images/logo.png" alt="Logo" height="40">
+    </div>
+    <a href="index.html">Home</a>
+    <a href="page2.html">MOre</a>
+    <a href="page3.html">Details</a>
+  </nav>
+
+  <section class="hero-section">
+    <div class="hero-content">
+      <h1>Computer Networks</h1>
+      <p>Computer networks are systems that connect multiple devices, such as computers, 
+        servers, and routers, to share data and resources. They enable communication and 
+        collaboration through wired or wireless connections, forming local area networks 
+        (LANs) or expansive networks like the internet.</p>
+      <div class="character-list">
+        <h1>Personal Area Network </h1>
+        <ul>
+          </li>
+          A personal area network (PAN) connects electronic devices within a
+          user's immediate area. The size of a PAN ranges from a few centimeters
+          to a few meters. One of the most common real-world examples of a
+          PAN is the connection between a Bluetooth earpiece and a smartphone
+        <h1>Local Area Network</h1>
+        <ul>
+          A local area network (LAN) is a
+          collection of devices connected together in one physical
+          location, such as a building, office, or home. A LAN can be
+          small or large, ranging from a home network with one user to
+          an enterprise network with thousands of users and devices
+          in an office or school.
+        </ul>
+      </div>
+      <div class="youtube-video">
+        <iframe width="560" height="315" src="https://youtu.be/qfUZBKDh9BY?si=3x5Br75Z7rvkSPlq" 
+          title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen></iframe>
+      </div>
+    </div>
+    <div class="hero-image">
+      <img src="https://png.pngtree.com/thumb_back/fw800/background/20190223/ourmid/pngtree-blue-smart-technology-stereo-city-background-material-informationartificial-intelligence-blue-image_73738.jpg">
+    </div>
+  </section>
+
+  <div class="orange-line"></div>
+
+  <section class="hero-section">
+    <div class="hero-content">
+      <h1>Metropolitan Area Network</h1>
+      <p>A metropolitan area network (MAN) is a computer network
+        that connects computers within a metropolitan area, which could
+        be a single large city, multiple cities and towns, or any given
+        large area with multiple buildings. A MAN is larger than a
+        local area network (LAN) but smaller than a wide area network (WAN).</p>
+      <div class="character-list">
+        <h1> wide area network <h1>
+        <ul>
+          A wide area network (WAN), is a large network of information
+         that is not tied to a single location. WANs can facilitate
+         communication, the sharing of information and much more
+         between devices from around the world through a WAN provider.</li>
+        </ul>
+        <h1>"Wired/Wireless Communication">
+        <ul>
+          Wired: Uses cables to connect devices. It's usually faster and
+          more secure.
+        
+          Wireless: Uses radio waves to connect devices. It's more
+          convenient but can be slower and less secure. </li>
+        </ul>
+      </div>
+      <div class="youtube-video">
+        <iframe width="560" height="315" src="https://www.youtube.com/watch?v=ueVnSz_lXEs&pp=ygUZbGVzc29uZyBhYm91dCBjb21wdXRlciBuZQ%3D%3D"
+          title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen></iframe>
+      </div>
+    </div>
+    <div class="hero-image">
+      <img src="https://i.pinimg.com/originals/c9/6f/a7/c96fa7af918ffacc8259e9253188bd82.jpg">
+    </div>
+  </section>
+
+  <div class="orange-line"></div>
+
+  <section class="hero-section">
+    <div class="hero-content">
+      <h1>Wifi</h1>
+      <p>Wi-Fi is a wireless networking technology that allows devices
+        such as computers (laptops and desktops), mobile devices
+        (smart phones and wearables),and other equipment (printers
+        and video cameras) to interface with the Internet.</p>
+      <div class="character-list">
+        <h1>bluetooth</h1>
+        <ul>
+          <li>Bluetooth is a short-range wireless technology standard
+            that is used for exchanging data between fixed and mobile
+            devices over short distances and building personal area networks.
+            In the most widely used mode,transmission power is limited to
+            2.5 milliwatts, giving it a very short range of up to 10 metres</li>
+        </ul>
+        <h1>Cloud computers (private/public)</h1>
+        <ul>
+          PRIVATE CLOUD: a service that is completely controlled by a
+          single organization and not shared with others.
+        
+        
+         PUBLIC CLOUD:  is a subscription service that is also offered to
+        any and all customers who want similar services </li>
+        </ul>
+      </div>
+      <div class="youtube-video">
+        <iframe width="560" height="315" src="https://www.youtube.com/watch?v=M988_fsOSWo&pp=ygUbbGVzc29iIGFib3V0IGNsb3VkIG5ldHdvcmtz"
+          title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen></iframe>
+      </div>
+    </div>
+    <div class="hero-image">
+      <img src="https://cdn.intechopen.com/books/images_new/9225.jpg">
+    </div>
+  </section>
+
+  <div class="orange-line"></div>
+
+  <section class="hero-section">
+    <div class="hero-content">
+      <h1>Virus</h1>
+      <p>A virus is a type of malicious software that targets devices like computers, 
+        phones, and laptops, often through email, infected websites, or unknown downloads. 
+        Its primary goal is to steal personal information, such as social security details, 
+        bank accounts, or identities, which can be used for blackmail, fraud, or public humiliation.
+         Viruses can also damage devices internally, causing slow system performance, random pop-ups,
+          or unexpected logouts. Staying vigilant and avoiding suspicious links or downloads is 
+          essential to protect against such threats.</p>
+      <div class="character-list">
+        <h1>Malware</h1>
+        <ul>
+          <li>Malware is a type of software designed to target internet-connected devices, aiming to disrupt,
+             damage, or gain unauthorized access to systems to steal personal information. Common types of malware
+              include viruses, which disrupt device functionality; trojan horses, which disguise themselves as 
+              legitimate software or websites; and spyware, which secretly collects personal data. Protecting 
+              devices from malware requires caution and the use of reliable security measures.</li>
+        </ul>
+        <h1>Spam</h1>
+        <ul>
+          Spam - Spam refer's to any uninvited and nonpermitted form of digital communication sent in mass. In most cases, 
+          spam is transmitted via gmail, but it can also be transmitted via messages, phone call's, or sms. Spam is any 
+          unsolicited form of communication that is transmitted in mass. In most cases, it is sent through e-mail/gmail, 
+          but it can also be distributed through sMS, social media, or a call. Spam messages often show themselves as
+          innocent, though annoying, promotional e-mail/gmail. But sometimes spam is a scam to steal or do otherwise 
+          maliciously spam</li>
+        </ul>
+      </div>
+      <div class="youtube-video">
+        <iframe width="560" height="315" src="https://www.youtube.com/watch?v=vT0Rc_0oB3U&pp=ygUYd2hhdCBpcyBzcGFtIGluIGNvbXB1dGVy"
+          title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen></iframe>
+      </div>
+    </div>
+    <div class="hero-image">
+      <img src="https://i.pinimg.com/originals/50/ba/f9/50baf94a14131a2b154f914f92f33c59.jpg">
+
+    </div>
+  </section>
+
+  <script>
+    window.addEventListener('scroll', function () {
+      var navbar = document.querySelector('nav');
+      var scrollPosition = window.scrollY;
+      if (scrollPosition > 100) {
+        navbar.style.backgroundColor = 'rgba(0, 0, 0, 0.9)';
+      } else {
+        navbar.style.backgroundColor = 'rgba(0, 0, 0, 0.9)';
+      }
+    });
+  </script>
+</body>
+
+</html>
