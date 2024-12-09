@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Home</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bungee&display=swap">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Bungee', sans-serif;
+      background-color: #111;
+      color: #fff;
+      margin-top: 50px;
+    }
+
+    nav {
+      background-color: rgba(0, 0, 0, 0.9);
+      overflow: hidden;
+      padding: 10px;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+      transition: background-color 0.3s;
+    }
+
+    .logo {
+      float: left;
+      margin-right: 20px;
+    }
+
+    nav a {
+      float: left;
+      display: block;
+      color: #fff;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      transition: color 0.3s, transform 0.3s;
+    }
+
+    nav a:hover {
+      color: red;
+      transform: translateY(-3px);
+    }
+
+    section.hero {
+      position: relative;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    section.hero video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: 0.7;
+    }
+
+    .content {
+      position: absolute;
+      top: 50%;
+      left: 10%;
+      transform: translate(-10%, -50%);
+      text-align: left;
+      width: 60%;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      color: red;
+      margin-bottom: 20px;
+      text-shadow: 0 0 20px red;
+    }
+
+    p {
+      font-size: 1.2em;
+      color: #fff;
+      margin-bottom: 30px;
+      text-align: justify;
+    }
+
+    .learn-more-btn {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #fff;
+      color: #333;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 5px;
+    }
+
+    section.about {
+      background-color: #000;
+      color: #fff;
+      padding: 50px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .about-info {
+      width: 45%;
+    }
+
+    .about-info h2 {
+      color: orange;
+      margin-bottom: 20px;
+    }
+
+    .poster {
+      width: 45%;
+    }
+
+    .poster-section {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      margin-top: 50px;
+    }
+
+    .poster-container {
+      text-align: center;
+      margin: 10px;
+      width: 20%;
+      box-shadow: 0 0 20px red;
+    }
+
+    .poster-container img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .poster-container h3 {
+      color: orange;
+      text-shadow: 0 0 20px red;
+      margin-top: 10px;
+    }
+
+    .orange-line {
+      border: 2px solid orange;
+      width: 100%;
+      margin: 20px 0;
+    }
+
+    audio {
+      display: none;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    .learn-more-btn {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #fff;
+      color: #333;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 5px;
+      transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+    }
+
+    .learn-more-btn:hover {
+      background-color: red;
+      color: #fff;
+      box-shadow: 0 0 20px red;
+      /* Added red glow on hover */
+    }
+  </style>
+</head>
+
+<body>
+
+  <audio controls autoplay loop>
+    <source src="audio/Stranger Things (Extended)_256k.mp3" type="audio/mp3">
+    Your browser does not support the audio tag.
+  </audio>
+
+  <nav>
+    <div class="logo">
+      <img src="images/logo.png" alt="Logo" height="40">
+    </div>
+    <a href="index.html">Home</a>
+    <a href="page2.html">Characters</a>
+    <a href="page3.html">Monsters</a>
+  </nav>
+
+  <section class="hero">
+    <video autoplay muted loop>
+      <source src="videos/The Beauty Of Stranger Things 1.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <div class="content">
+      <h1>AUTOBIOGRAPHY</h1>
+      <p>"Where facts shift under examination and the extraordinary forms the cornerstone of criminal investigation."</p>
+      <a href="#about" class="learn-more-btn" onmouseover="hoverEffect(this)" onmouseout="hoverEffect(this)">Learn
+        More</a>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <div class="about-info">
+      <h2>About Me</h2>
+      <div class="orange-line"></div>
+      <p> My name is Francine Kyla Mateo, and i was born in pamarawan, malolos bulacan. Growing up in that province my 
+        childhood was filled with exciting memories of hangging out with family and friends, always traveling and exploring
+        the beautiful corners of bulacan. Whether it was a quick trip to local spots or a longer journey to new places, 
+        I’ve always loved discovering new places. These experience ignited me in continous adventures and that is what am I today.
+      </p>
+      <p>However, life wasn’t always easy for me . One of the biggest challenges I faced was constantly moving schools because
+         everytime I already feel comfortoble to that place and whenever i already have new friends we always need to move house
+          or school. I never had the chance of staying in one place for so long, and it meant I had to adjust quickly to new 
+          classmates, teachers, and environments. At times It felt overwhelming, but this constant change thought me adaptability,
+           and the ability to embrace new Beginnings. It wasn’t easy, but It shaped me into someone who can handle change with grace </p>
+      <p>Today, at 21 years old, I’m pursuing my Bachelor of Science in Criminology in College. My decision to enter this field wasn’t made 
+        lightly, but I’m deeply committed  to it. The road to college has been full of challenges, but I know that becoming a law enforcer,
+         wheter in the Armed Forces of the Philippines (AFP) or the Bureau of Fire Protection (BFP), is my calling. My cousin, who’s always
+          been a role model to me, Inspired me to take this path.I want to serve my country and make a difference in people’s lives, and 
+          this dream keeps me motivate everyday.  When it comes to relationships, I’m perfectly happy being single. I’ve come to realize that
+          being in a relationship involves a lot of responsibility, and right now, I want to focus on my studies and personal growth. It’s a
+          time to explore who am I, what I want, and where I’m headed in life without worrying about other obligations. The peace that comes 
+          with being single allows me to channel all my energy into achieving my goals. </p>
+      <div class="orange-line"></div>
+    </div>
+    <div class="poster">
+      <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/462556132_435785005989407_2062040846754485958_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=0024fc&_nc_eui2=AeE-jHLZuRhRd8cAHfazalnCd4b8b3V2m1R3hvxvdXabVHxM2xyzSsPEolIxgXLPoo0yCW794QEyOGSRiDiRC4J-&_nc_ohc=bcafiSbF7eIQ7kNvgFVAK1u&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.xx&oh=03_Q7cD1QHsrQje9v7BXqV5NvIqToEoz87_VDhsKhSGnObXfvVhRQ&oe=677CFB17">
+    </div>
+  </section>
+
+  <section class="poster-section">
+    <div class="poster-container">
+      <img src="images/Stranger Things 1.jpeg" alt="Stranger Things 1">
+      <h3>Stranger Things 1</h3>
+    </div>
+    <div class="poster-container">
+      <img src="images/Stranger Things 2.jpeg" alt="Stranger Things 2">
+      <h3>Stranger Things 2</h3>
+    </div>
+    <div class="poster-container">
+      <img src="images/Stranger Things 3.jpeg" alt="Stranger Things 3">
+      <h3>Stranger Things 3</h3>
+    </div>
+    <div class="poster-container">
+      <img src="images/Stranger Things 4.jpeg" alt="Stranger Things 4">
+      <h3>Stranger Things 4</h3>
+    </div>
+  </section>
+
+  <section class="poster-section">
+    <h3>Coming Soon.</h3>
+    <div class="orange-line"></div>
+    <div class="poster-container">
+      <img src="images/Stranger Things 5.jpeg" alt="Stranger Things 1">
+      <h3>Stranger Things 5</h3>
+    </div>
+    </div>
+  </section>
+
+
+  <script>
+
+    function scrollToSection(sectionId) {
+      const section = document.getElementById(sectionId);
+      section.scrollIntoView({behavior: 'smooth'});
+    }
+
+    // JavaScript for changing navbar transparency on scroll
+    window.addEventListener('scroll', function () {
+      var navbar = document.querySelector('nav');
+      var scrollPosition = window.scrollY;
+      if (scrollPosition > 100) {
+        navbar.style.backgroundColor = "rgb(0, 0, 0, 0.9)";
+      } else {
+        navbar.style.backgroundColor = "rgb(0, 0, 0, 0.9)";
+      }
+    });
+  </script>
+</body>
+
+</html>
